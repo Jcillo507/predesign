@@ -1,0 +1,12 @@
+.header-ctr{
+  display: flex;
+  justify-content: space-between;
+}
+.header-left{
+  margin-left: 5em;
+}
+.header-right{
+  display: flex;
+  align-items: center;
+  margin-right: 5em;
+}
