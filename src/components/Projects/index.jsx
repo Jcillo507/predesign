@@ -14,10 +14,14 @@ import "./projects.scss";
 const Projects = () => {
   return (
     <div className="projects-ctr">
-      <h2 className='projects-title'>Projects</h2>
-      <div className='projects-card-ctr'>
-        <PCard image={BetThat} />
-        <PCard image={Company} />
+      <h2 className="projects-title">Projects</h2>
+      <div className="projects-card-ctr">
+        <PCard
+          image={BetThat}
+          text="working"
+          address="http://jc-ga-p2.surge.sh/"
+        />
+        <PCard image={Company} text="working1" />
         <PCard image={Crypto} />
         <PCard image={Late} />
         <PCard image={Postr} />

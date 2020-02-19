@@ -6,7 +6,10 @@ const PCard = (props) => {
     <div className="pcard-ctr">
       <img className="project-img" src={props.image} />
       <div className="overlay">
-        <div class="text">Hello World</div>
+        <div class="text">{props.text}</div>
+        <form action={props.address}>
+          <button type="submit">Visit Site</button>
+        </form>
       </div>
     </div>
   );
