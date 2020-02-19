@@ -5,8 +5,9 @@ import Intro from './components/Intro/'
 import Projects from './components/Projects/'
 import Skills from './components/Skills/'
 import Contact from './components/Contact/'
+import Info from './components/Info/'
 
-import './App.css';
+import './App.scss';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
       </header>
       <main>
         <Intro/>
+        <Info />
         <Projects/>
         <Skills/>
         <Contact />

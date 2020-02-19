@@ -1,4 +1,19 @@
-.skill-ctr{
-    display: flex;
-    justify-content: center;
+.skill-ctr {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-content: center;
+     align-items: center;
+     margin: 100px 250px;
+}
+.skills-title{
+font-size: 50px;
+}
+.skill-card-ctr {
+     display: flex;
+     flex-wrap: wrap;
+     flex-basis: 33%;
+     align-content: center;
+     justify-content: center;
+     align-items: center;
 }

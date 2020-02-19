@@ -8,12 +8,12 @@ const Header = ()=>{
   return(
     <div className='header-ctr'>
       <div className='header-left'>
-      <img src={Logo}/>
+      <img  className='header-logo'src={Logo}/>
       </div>
         <div className='header-right'>
-          <a>Projects</a>
-          <a>Skills</a>
-          <a>Contact</a>
+          <a className='header-link'>Projects</a>
+          <a className='header-link'>Skills</a>
+          <a className='header-link'>Contact</a>
         </div>
     </div>
   )

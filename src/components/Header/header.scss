@@ -1,12 +1,24 @@
+@import "../../base.scss";
+
 .header-ctr{
   display: flex;
   justify-content: space-between;
+  height: 150px;
 }
 .header-left{
   margin-left: 5em;
 }
 .header-right{
+  color:$header-links;
   display: flex;
   align-items: center;
   margin-right: 5em;
+}
+
+.header-logo{
+  height:100%
+}
+.header-link{
+  font-size:20px;
+  padding:10px;
 }
