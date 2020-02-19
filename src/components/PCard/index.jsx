@@ -3,8 +3,11 @@ import './pcard.scss'
 
 const PCard = (props) => {
   return (
-    <div>
-      <img className='project-img'src={props.image} />
+    <div className="pcard-ctr">
+      <img className="project-img" src={props.image} />
+      <div className="overlay">
+        <div class="text">Hello World</div>
+      </div>
     </div>
   );
 };
