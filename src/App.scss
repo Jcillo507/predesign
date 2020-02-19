@@ -1,4 +1,6 @@
 @import './base.scss';
+@import url('https://fonts.googleapis.com/css?family=Prata&display=swap');
+
 
 html,
 body,
@@ -88,6 +90,9 @@ video {
   font: inherit;
   // vertical-align: baseline;
 }
+
 .App{
   background-color: $app-bg;
+  font-family: 'Prata',
+  serif;
 }

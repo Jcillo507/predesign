@@ -13,7 +13,7 @@ import "./skills.scss";
 
 const Skills = () => {
   return (
-    <div className="skill-ctr">
+    <div className="skill-ctr" id='skills'>
       <h2 className='skills-title'>Skills</h2>
       <div className="skill-card-ctr">
         <SCard image={ReactLogo} />
