@@ -90,6 +90,10 @@ video {
   font: inherit;
   // vertical-align: baseline;
 }
+a {
+  color: inherit;
+  text-decoration: none;
+}
 
 .App{
   background-color: $app-bg;

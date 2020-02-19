@@ -1,3 +1,4 @@
+@import'..//../base.scss';
 .pcard-ctr{
   // flex-basis:33%;
   position: relative;
@@ -21,7 +22,7 @@
   opacity: 0;
   transition: .5s ease;
   // border-radius: 5px;
-  background-color: #008CBA;
+  background-color: $hover-projects-bg;
 }
 .pcard-ctr:hover .overlay {
   opacity: 1;

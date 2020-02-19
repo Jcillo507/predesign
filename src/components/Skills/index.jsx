@@ -13,6 +13,7 @@ import "./skills.scss";
 
 const Skills = () => {
   return (
+    <div className='skill-wrapper'>
     <div className="skill-ctr" id='skills'>
       <h2 className='skills-title'>Skills</h2>
       <div className="skill-card-ctr">
@@ -23,6 +24,7 @@ const Skills = () => {
         <SCard image={RubyLogo} />
         <SCard image={SassLogo} />
       </div>
+    </div>
     </div>
   );
 };

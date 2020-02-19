@@ -19,7 +19,7 @@ const Projects = () => {
         <PCard
           image={Company}
           name="Sample Company Website"
-          desc="Sample Company Website"
+          desc=""
           address="https://stupefied-shaw-023514.netlify.com/"
           tech="React Sass"
         />
