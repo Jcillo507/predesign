@@ -17,7 +17,7 @@
   left: 50px;
   height: 75%;
   width: 80%;
-  // opacity: 0;
+  opacity: 0;
   transition: .5s ease;
   background-color: $hover-projects-bg;
   display:flex;
@@ -41,7 +41,9 @@
 }
 .desc{
   font-size: 20px;
-
+}
+.tech{
+font-size: 18px;
 }
 .pcard-bttn{
   height:50px;

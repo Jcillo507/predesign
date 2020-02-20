@@ -8,7 +8,7 @@ const PCard = props => {
       <div className="overlay">
         <div className="text title">{props.name}</div>
         <div className="text desc">{props.desc}</div>
-        <div className="text"> {props.tech}</div>
+        <div className="text tech"> {props.tech}</div>
         <form action={props.address}>
           <button className="pcard-bttn" type="submit">
             Visit Website >
