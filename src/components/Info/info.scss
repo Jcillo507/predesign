@@ -16,3 +16,18 @@
   line-height: 2;
   letter-spacing: .03em;
 }
+// @media screen and (max-device-width: 375px) {
+//  .info-text {
+//    padding: auto;
+//    font-size: 2.8em;
+//    line-height: 1;
+//    letter-spacing: 0em;
+//  }
+// }
+@media screen and
+(max-device-width : 376px) and 
+(max-device-width : 812px){
+ .info-text{
+   padding: 0 50px;
+ }
+}
