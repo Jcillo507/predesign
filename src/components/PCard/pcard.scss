@@ -14,27 +14,43 @@
 .overlay {
   position: absolute;
   top: 50px;
-  // bottom: 0;
   left: 50px;
-  // right: 0;
   height: 75%;
   width: 80%;
-  opacity: 0;
+  // opacity: 0;
   transition: .5s ease;
-  // border-radius: 5px;
   background-color: $hover-projects-bg;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.pcard-ctr:hover .overlay {
+.overlay:hover {
   opacity: 1;
 }
 .text {
-  color: white;
-  font-size: 20px;
+  color: $text-color-white;
   position: relative ;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
+  top: 0%;
+  left: 0%;
   text-align: center;
+  margin: 10px;
+}
+.title{
+  font-size: 25px;
+}
+.desc{
+  font-size: 20px;
+
+}
+.pcard-bttn{
+  height:50px;
+  border-radius: 20px;
+  margin-top:10px;
+}
+.pcard-bttn:hover {
+  background-color: $info-bg;
+    color: $hover-projects-bg;
+
+  
 }

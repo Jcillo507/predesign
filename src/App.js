@@ -12,9 +12,9 @@ import './App.scss';
 function App() {
   return (
     <div className="App">
-      <header>
+      {/* <header> */}
     <Header/>
-      </header>
+      {/* </header> */}
       <main>
         <Intro/>
         <Info />

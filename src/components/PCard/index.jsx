@@ -6,11 +6,13 @@ const PCard = props => {
     <div className="pcard-ctr">
       <img className="project-img" src={props.image} />
       <div className="overlay">
-        <div className="text">{props.name}</div>
-        <div className="text">{props.desc}</div>
+        <div className="text title">{props.name}</div>
+        <div className="text desc">{props.desc}</div>
         <div className="text"> {props.tech}</div>
         <form action={props.address}>
-          <button type="submit">Visit Site</button>
+          <button className="pcard-bttn" type="submit">
+            Visit Website >
+          </button>
         </form>
       </div>
     </div>

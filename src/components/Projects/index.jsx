@@ -21,21 +21,21 @@ const Projects = () => {
           name="Sample Company Website"
           desc=""
           address="https://stupefied-shaw-023514.netlify.com/"
-          tech="React Sass"
+          tech="React | Sass"
         />
         <PCard
           image={Crypto}
           name="CryptoNews"
-          desc="Crypto currency coint tracker"
+          desc="Crypto currency coin tracker"
           address="https://jccn.herokuapp.com/"
-          tech="React ExpressJs Sass Node"
+          tech="React | ExpressJs | Sass"
         />
         <PCard
           image={Venu}
           name="Venu"
           desc="Restuarant Website Aggregator"
           address="https://venu-app-v3.herokuapp.com/"
-          tech="React ExpressJs CSS Node"
+          tech="React | ExpressJs | CSS"
         />
         <PCard
           image={BetThat}
@@ -49,14 +49,14 @@ const Projects = () => {
           name="Dont Be Late"
           desc="Racing Game"
           address="https://jcillo507.github.io/dont-be-late/"
-          tech="Html CSS"
+          tech="Html | CSS"
         />
         <PCard
           image={Postr}
           name="Postr"
           desc="Twitter Clone"
           address="http://postr-jc.surge.sh/"
-          tech="React On Rails CSS"
+          tech="React On Rails | CSS"
         />
       </div>
     </div>
