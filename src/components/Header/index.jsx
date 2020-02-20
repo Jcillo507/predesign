@@ -27,13 +27,15 @@ const Header = () => {
               <a href="http://postr-jc.surge.sh/">Postr</a>
             </div>
           </div>
+   
+            <a href="#skills" className="header-link">
+              Skills
+            </a>
+        
+          <a href="#contact" className="header-link">
+            Contact
+          </a>
         </form>
-        <a href="#skills" className="header-link">
-          Skills
-        </a>
-        <a href="#contact" className="header-link">
-          Contact
-        </a>
       </div>
     </div>
   );
