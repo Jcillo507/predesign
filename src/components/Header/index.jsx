@@ -11,9 +11,11 @@ const Header = () => {
         <img className="header-logo" src={Logo} />
       </div>
       <div className="header-right">
-        <form href="#projects" className="header-link">
+        <form className="header-link">
           <div className="dropdown">
-            <button className="dropbtn header-link">Projects</button>
+            <button className="dropbtn header-link">
+              <a href="#projects">Projects</a>
+            </button>
             <div className="dropdown-content">
               <a href="https://stupefied-shaw-023514.netlify.com/">
                 Sample Company Website
@@ -27,11 +29,11 @@ const Header = () => {
               <a href="http://postr-jc.surge.sh/">Postr</a>
             </div>
           </div>
-   
-            <a href="#skills" className="header-link">
-              Skills
-            </a>
-        
+
+          <a href="#skills" className="header-link">
+            Skills
+          </a>
+
           <a href="#contact" className="header-link">
             Contact
           </a>
