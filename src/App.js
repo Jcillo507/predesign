@@ -7,6 +7,7 @@ import Skills from './components/Skills/'
 import Contact from './components/Contact/'
 import Info from './components/Info/'
 
+
 import './App.scss';
 
 function App() {

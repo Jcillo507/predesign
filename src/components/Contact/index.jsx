@@ -2,10 +2,13 @@ import React from "react";
 
 import "./contact.scss";
 
+import Resume from '../Resume/'
+
 const Contact = () => {
   return (
     <div className="contact-form" id="contact">
       <h2 className="contact-title">Contact Me</h2>
+      <Resume className='contact-text'/>
       <h3 className="contact-text">Have a question or want to work with me?</h3>
       <h3 className="contact-text">
         Send me an e-mail and I will get back to you as fast as I can.

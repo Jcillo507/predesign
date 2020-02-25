@@ -37,6 +37,12 @@ const Header = () => {
           <a href="#contact" className="header-link">
             Contact
           </a>
+          <a
+            className="header-link"
+            href="https://drive.google.com/file/d/1p5A0XqmG1Sc1fqiUKKltZQa-qC2bIbV9/view?usp=sharing"
+          >
+            Resume
+          </a>
         </form>
       </div>
     </div>
