@@ -41,7 +41,7 @@ const Projects = () => {
           image={BetThat}
           name="Country Info"
           desc="REST Country API"
-          address="http://jc-ga-p2.surge.sh/"
+          address="http://jccountry.surge.sh/"
           tech="React | Sass"
         />
         <PCard
