@@ -39,15 +39,15 @@ const Projects = () => {
         />
         <PCard
           image={BetThat}
-          name="Bet That"
-          desc="Gambling Calculator"
+          name="Country Info"
+          desc="REST Country API"
           address="http://jc-ga-p2.surge.sh/"
-          tech="React"
+          tech="React | Sass"
         />
         <PCard
           image={Late}
           name="Dont Be Late"
-          desc="Racing Game"
+          desc="Obstacle Aversion Game"
           address="https://jcillo507.github.io/dont-be-late/"
           tech="Html | CSS"
         />

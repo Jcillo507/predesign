@@ -22,7 +22,7 @@ const Header = () => {
               </a>
               <a href="https://jccn.herokuapp.com/">CryptoNews</a>
               <a href="https://venu-app-v3.herokuapp.com/">Venu</a>
-              <a href="http://jc-ga-p2.surge.sh/">Bet That</a>
+              <a href="http://jccountry.surge.sh/">Country Info</a>
               <a href="https://jcillo507.github.io/dont-be-late/">
                 Don't Be Late
               </a>
