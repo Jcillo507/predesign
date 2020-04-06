@@ -2,7 +2,7 @@ import React from "react";
 
 import PCard from "../PCard";
 
-import BetThat from "..//../assets/projects/betthat.png";
+import Country from "..//../assets/projects/country.png";
 import Company from "..//../assets/projects/company.png";
 import Crypto from "..//../assets/projects/CryptoNews.png";
 import Late from "..//../assets/projects/dontbelate.png";
@@ -38,7 +38,7 @@ const Projects = () => {
           tech="React | ExpressJs | CSS"
         />
         <PCard
-          image={BetThat}
+          image={Country}
           name="Country Info"
           desc="REST Country API"
           address="http://jccountry.surge.sh/"
