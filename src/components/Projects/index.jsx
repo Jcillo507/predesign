@@ -9,7 +9,6 @@ import Late from "..//../assets/projects/dontbelate.png";
 import Postr from "..//../assets/projects/Postr.png";
 import Venu from "..//../assets/projects/venu.png";
 
-import "./projects.scss";
 
 const Projects = () => {
   return (

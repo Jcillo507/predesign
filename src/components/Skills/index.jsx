@@ -9,7 +9,6 @@ import JsLogo from "..//../assets/skills/js-logo.png";
 import RubyLogo from "..//../assets/skills/ruby-logo.png";
 import SassLogo from "..//../assets/skills/sass-logo.png";
 
-import "./skills.scss";
 
 const Skills = () => {
   return (
