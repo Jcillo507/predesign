@@ -2,22 +2,35 @@
   @include flexbox(row, space-between);
 
   &__logo {
-    margin-left: em(50)
+    margin-left: em(50);
+    margin-top: em(5);
+    margin-bottom: em(5);
+    height: em(140)
+  }
+
+  &__logo-ctr {
+    @include flexbox(row, space-between);
+    align-items: center;
+  }
+  &__logo-text{
+    color:$header-text-color;
+    font-size: em(84);
+    font-family: $header-font;
+    margin-left: em(4);
   }
 
   &__link-ctr {
     @include flexbox(row, space-between);
+      font-family: $Oswald-font;
     margin-right: em(100);
-    width:30%;
-    align-items: flex-end;
+    width: 30%;
+    align-items: center;
   }
 
   &__dropdown-btn {
     background-color: $app-bg;
     color: $header-links;
-    font-family: 'Prata',
-      serif;
-    ;
+    font-family: $Oswald-font;
     border: none;
   }
 

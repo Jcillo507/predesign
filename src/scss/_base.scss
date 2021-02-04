@@ -1,6 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@600&display=swap');
+$Oswald-font: 'Oswald',
+sans-serif;
+$header-font:'Montserrat',
+sans-serif;
+;
+$hero-bullet-font:'Source Code Pro',
+monospace;
+$hero-text-font:'Big Shoulders Display',
+cursive;
 $header-links:#090C9B;
 $info-bg:#B4C5E4;
-$font-color:#1E1B18;
+$header-text-color:#1E1B18;
 $app-bg:#FFFAFF;
 $hover-dd-bg:#f1f1f1;
 $hover-dd-links: #0A2463;

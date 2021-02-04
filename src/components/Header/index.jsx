@@ -5,7 +5,10 @@ import Logo from "..//../assets/logo.png";
 const Header = () => {
   return (
     <header className="header">
-      <img className="header__logo" src={Logo} />
+      <div className="header__logo-ctr">
+        <img className="header__logo" src={Logo} />
+        <p className="header__logo-text">Joe Cillo</p>
+      </div>
       <nav className="header__link-ctr">
         <div className="header__dropdown">
           <button className="header__dropdown-btn header-link">
