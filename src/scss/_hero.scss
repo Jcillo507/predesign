@@ -1,6 +1,5 @@
 .hero {
   @include flexbox(row, center);
-  // height: em(900);
   margin: em(20) 0;
   color: $primary-text-color;
   height: em(800);
@@ -8,7 +7,7 @@
   &__image-ctr {
     @include flexbox(row, center);
     align-items: center;
-    width: 50%;
+    flex: 50%;
 
     img {
       margin-left: em(100);
@@ -17,7 +16,7 @@
   }
 
   &__text-ctr {
-    width: 50%;
+    flex: 50%;
     @include flexbox(column, space-evenly);
   }
 

@@ -9,13 +9,14 @@ import Late from "..//../assets/projects/dontbelate.png";
 import Postr from "..//../assets/projects/Postr.png";
 import Venu from "..//../assets/projects/venu.png";
 
-
 const Projects = () => {
   return (
-    <div className="projects-ctr" id='projects'>
-      <h2 className="projects-title">Projects</h2>
+    <section className="projects">
+      <div className="projects__text">
+        <h2 className="projects__title">03. WHAT</h2>
+      </div>
       <div className="projects-card-ctr">
-        <PCard
+        {/* <PCard
           image={Company}
           name="Sample Company Website"
           desc=""
@@ -56,9 +57,9 @@ const Projects = () => {
           desc="Twitter Clone"
           address="http://postr-jc.surge.sh/"
           tech="React On Rails | CSS"
-        />
+        /> */}
       </div>
-    </div>
+    </section>
   );
 };
 

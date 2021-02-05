@@ -1,36 +1,39 @@
 .skills {
   @include flexbox(row, center);
-height: em(900);
+  height: em(900);
+
   img {
     height: em(200);
   }
 
   &__title-ctr {
-    width: 50%;
+    flex: 50%;
     margin-left: em(200);
-    li{
-      font-size: em(40);
-        font-weight: 700;
-        color: $info-title-text-color;
-        padding: 20px;
 
+    li {
+      font-size: em(40);
+      font-weight: 700;
+      color: $info-title-text-color;
+      padding: 20px;
     }
   }
-&__title{
-   color: $info-title-text-color;
-   font-weight: 900;
-   font-size:em(17);
-   margin-bottom: em(20);
-   letter-spacing: em(3);
-}
-&__subtitle{
-  font-weight: 900;
-  font-size:em(50);
-     margin-bottom: 25px;
-     margin-left: 20px;
 
-}
+  &__title {
+    color: $info-title-text-color;
+    font-weight: 900;
+    font-size: em(17);
+    margin-bottom: em(20);
+    letter-spacing: em(3);
+  }
+
+  &__subtitle {
+    font-weight: 900;
+    font-size: em(50);
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+
   &__card-ctr {
-    width: 50%;
+    flex: 50%;
   }
 }

@@ -1,7 +1,5 @@
 import React from "react";
 
-import SCard from "../SCard/";
-
 import ReactLogo from "..//../assets/skills/react-logo.png";
 import CssLogo from "..//../assets/skills/css-logo.png";
 import HtmlLogo from "..//../assets/skills/html-logo.png";

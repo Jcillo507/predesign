@@ -10,7 +10,7 @@
 
   &__text-ctr {
     @include flexbox(column, center);
-    width: 50%;
+    flex: 50%;
     height: 100%;
     margin-left: em(100);
   }
@@ -18,7 +18,7 @@
   &__title {
     color: $info-title-text-color;
     font-weight: 900;
-    font-size:em(17);
+    font-size: em(17);
     margin-bottom: em(20);
     letter-spacing: em(3);
   }

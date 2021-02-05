@@ -13,13 +13,12 @@ import './css/main.css';
 function App() {
   return (
     <div className="App">
-    <Header/> 
-        <Hero/>
-        <Info />
-        <Skills/>
-        {/* <Projects/>
-        <Contact /> */}
-      
+      <Header />
+      <Hero />
+      <Info />
+      <Skills />
+      {/* <Projects /> */}
+      <Contact />
     </div>
   );
 }
