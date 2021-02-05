@@ -3,7 +3,8 @@
   // height: em(900);
   margin: em(20) 0;
   color: $primary-text-color;
-height:em(800);
+  height: em(800);
+
   &__image-ctr {
     @include flexbox(row, center);
     align-items: center;
@@ -31,11 +32,9 @@ height:em(800);
   }
 
   &__text {
-    padding-right: em(200);
+    // padding-right: em(200);
     padding-bottom: em(50);
     font-family: $hero-text-font;
     font-size: em(40);
-align-self: center;
-
   }
 }

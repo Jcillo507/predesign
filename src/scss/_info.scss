@@ -1,20 +1,39 @@
-.info{
+.info {
   @include flexbox();
-  font-family:$header-font;
-  img{
-    height:em(500)
-  }
-  &__text-ctr{
-    width:50%;
-  }
-  &__title{
-    color:$info-title-text-color;
-    font-weight: 900;
-  }
-  &__heading{
-    font-size: em(50);
-        font-weight: 900;
-        color:$primary-text-color;
+  font-family: $header-font;
+  color: $primary-text-color;
+  height: em(900);
+  align-items: center;
+  line-height: 1.5;
 
+  img {
+    height: em(600);
+  }
+
+  &__text-ctr {
+    @include flexbox(column, center);
+    width: 50%;
+    height: 100%;
+    margin-left: em(100);
+  }
+
+  &__title {
+    color: $info-title-text-color;
+    font-weight: 900;
+    margin-bottom: em(20);
+  }
+
+  &__heading {
+    font-size: em(50);
+    font-weight: 900;
+    margin-left: 20px;
+
+  }
+
+  &__text {
+    font-weight: 700;
+    margin-top: em(30);
+    margin-left: 20px;
+    margin-right: 50px;
   }
 }

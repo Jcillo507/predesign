@@ -302,11 +302,9 @@ table {
 }
 
 .hero__text {
-  padding-right: 12.5em;
   padding-bottom: 3.125em;
   font-family: "Big Shoulders Display", cursive;
   font-size: 2.5em;
-  align-self: center;
 }
 
 .info {
@@ -321,24 +319,48 @@ table {
   -ms-justify-content: space-between;
   justify-content: space-between;
   font-family: "Montserrat", sans-serif;
+  color: #524e4b;
+  height: 56.25em;
+  align-items: center;
+  line-height: 1.5;
 }
 
 .info img {
-  height: 31.25em;
+  height: 37.5em;
 }
 
 .info__text-ctr {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
   width: 50%;
+  height: 100%;
+  margin-left: 6.25em;
 }
 
 .info__title {
   color: #944dff;
   font-weight: 900;
+  margin-bottom: 1.25em;
 }
 
 .info__heading {
   font-size: 3.125em;
   font-weight: 900;
-  color: #524e4b;
+  margin-left: 20px;
+}
+
+.info__text {
+  font-weight: 700;
+  margin-top: 1.875em;
+  margin-left: 20px;
+  margin-right: 50px;
 }
 /*# sourceMappingURL=main.css.map */
