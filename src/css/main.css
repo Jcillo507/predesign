@@ -131,6 +131,11 @@ table {
   border-spacing: 0;
 }
 
+body {
+  color: #524e4b;
+  font-family: "Montserrat", sans-serif;
+}
+
 .header {
   display: -moz-flex;
   display: -ms-flex;
@@ -318,8 +323,6 @@ table {
   -moz-box-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  font-family: "Montserrat", sans-serif;
-  color: #524e4b;
   height: 56.25em;
   align-items: center;
   line-height: 1.5;
@@ -348,7 +351,9 @@ table {
 .info__title {
   color: #944dff;
   font-weight: 900;
+  font-size: 1.0625em;
   margin-bottom: 1.25em;
+  letter-spacing: 0.1875em;
 }
 
 .info__heading {
@@ -362,5 +367,54 @@ table {
   margin-top: 1.875em;
   margin-left: 20px;
   margin-right: 50px;
+}
+
+.skills {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  height: 56.25em;
+}
+
+.skills img {
+  height: 12.5em;
+}
+
+.skills__title-ctr {
+  width: 50%;
+  margin-left: 12.5em;
+}
+
+.skills__title-ctr li {
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #944dff;
+  padding: 20px;
+}
+
+.skills__title {
+  color: #944dff;
+  font-weight: 900;
+  font-size: 1.0625em;
+  margin-bottom: 1.25em;
+  letter-spacing: 0.1875em;
+}
+
+.skills__subtitle {
+  font-weight: 900;
+  font-size: 3.125em;
+  margin-bottom: 25px;
+  margin-left: 20px;
+}
+
+.skills__card-ctr {
+  width: 50%;
 }
 /*# sourceMappingURL=main.css.map */

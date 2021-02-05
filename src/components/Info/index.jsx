@@ -6,8 +6,8 @@ const Info = ()=>{
   return (
     <section className="info">
       <img src={InfoImage} alt="info image" className="info__image" />
-      <div className="info__text-ctr">
-        <p className='info__title'>01. W H O</p>
+      <blockquote className="info__text-ctr">
+        <p className='info__title'>01. WHO</p>
         <h3 className='info__heading'>I am a creative front end <br/>developer and designer <br/>based in New York</h3>
         <p className="info__text">
           I am a software engineer passionate about helping companies deliver
@@ -18,7 +18,7 @@ const Info = ()=>{
           and adapt to any situation to help my teammates and myself grow and
           achieve results to create the best product.
         </p>
-      </div>
+      </blockquote>
     </section>
   );
 }

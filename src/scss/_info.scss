@@ -1,7 +1,5 @@
 .info {
   @include flexbox();
-  font-family: $header-font;
-  color: $primary-text-color;
   height: em(900);
   align-items: center;
   line-height: 1.5;
@@ -20,7 +18,9 @@
   &__title {
     color: $info-title-text-color;
     font-weight: 900;
+    font-size:em(17);
     margin-bottom: em(20);
+    letter-spacing: em(3);
   }
 
   &__heading {
