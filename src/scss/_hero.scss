@@ -1,8 +1,9 @@
 .hero {
   @include flexbox(row, center);
-  height: em(600);
+  // height: em(900);
   margin: em(20) 0;
-
+  color: $primary-text-color;
+height:em(800);
   &__image-ctr {
     @include flexbox(row, center);
     align-items: center;
@@ -16,7 +17,7 @@
 
   &__text-ctr {
     width: 50%;
-    @include flexbox(column, space-between);
+    @include flexbox(column, space-evenly);
   }
 
   &__bullet-ctr {
@@ -29,12 +30,12 @@
     font-family: $hero-bullet-font;
   }
 
-  .info-text {
+  &__text {
+    padding-right: em(200);
     padding-bottom: em(50);
-    padding-right: em(100);
     font-family: $hero-text-font;
-        font-size: em(25);
-
+    font-size: em(40);
+align-self: center;
 
   }
 }

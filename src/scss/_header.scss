@@ -13,10 +13,11 @@
     align-items: center;
   }
   &__logo-text{
-    color:$header-text-color;
+    color:$primary-text-color;
     font-size: em(84);
     font-family: $header-font;
     margin-left: em(4);
+    font-weight:900;
   }
 
   &__link-ctr {

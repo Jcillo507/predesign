@@ -1,0 +1,20 @@
+.info{
+  @include flexbox();
+  font-family:$header-font;
+  img{
+    height:em(500)
+  }
+  &__text-ctr{
+    width:50%;
+  }
+  &__title{
+    color:$info-title-text-color;
+    font-weight: 900;
+  }
+  &__heading{
+    font-size: em(50);
+        font-weight: 900;
+        color:$primary-text-color;
+
+  }
+}

@@ -166,10 +166,11 @@ table {
 }
 
 .header__logo-text {
-  color: #1E1B18;
+  color: #524e4b;
   font-size: 5.25em;
   font-family: "Montserrat", sans-serif;
   margin-left: 0.25em;
+  font-weight: 900;
 }
 
 .header__link-ctr {
@@ -242,8 +243,9 @@ table {
   -moz-box-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  height: 37.5em;
   margin: 1.25em 0;
+  color: #524e4b;
+  height: 50em;
 }
 
 .hero__image-ctr {
@@ -274,10 +276,10 @@ table {
   -webkit-box-flex-direction: column;
   -moz-box-flex-direction: column;
   flex-direction: column;
-  -webkit-box-justify-content: space-between;
-  -moz-box-justify-content: space-between;
-  -ms-justify-content: space-between;
-  justify-content: space-between;
+  -webkit-box-justify-content: space-evenly;
+  -moz-box-justify-content: space-evenly;
+  -ms-justify-content: space-evenly;
+  justify-content: space-evenly;
 }
 
 .hero__bullet-ctr {
@@ -299,10 +301,44 @@ table {
   font-family: "Source Code Pro", monospace;
 }
 
-.hero .info-text {
+.hero__text {
+  padding-right: 12.5em;
   padding-bottom: 3.125em;
-  padding-right: 6.25em;
   font-family: "Big Shoulders Display", cursive;
-  font-size: 1.5625em;
+  font-size: 2.5em;
+  align-self: center;
+}
+
+.info {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-justify-content: space-between;
+  -moz-box-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  font-family: "Montserrat", sans-serif;
+}
+
+.info img {
+  height: 31.25em;
+}
+
+.info__text-ctr {
+  width: 50%;
+}
+
+.info__title {
+  color: #944dff;
+  font-weight: 900;
+}
+
+.info__heading {
+  font-size: 3.125em;
+  font-weight: 900;
+  color: #524e4b;
 }
 /*# sourceMappingURL=main.css.map */

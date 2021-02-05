@@ -5,6 +5,7 @@ import Hero from './components/Hero'
 import Projects from './components/Projects'
 import Skills from './components/Skills'
 import Contact from './components/Contact'
+import Info from './components/Info'
 
 
 import './css/main.css';
@@ -12,8 +13,10 @@ import './css/main.css';
 function App() {
   return (
     <div className="App">
-    <Header/> 
+    <Header/>
+      
         <Hero/>
+        <Info />
         {/* <Projects/>
         <Skills/>
         <Contact /> */}
