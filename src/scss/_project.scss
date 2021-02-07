@@ -1,0 +1,46 @@
+.project {
+  @include flexbox(column, center);
+  background-color: $primary-text-color;
+
+  width: em(750);
+  padding: em(40);
+  align-items: center;
+  margin: em(10);
+
+  img {
+    height: em(420);
+    width: em(600);
+  }
+
+  &__tech {
+    color: $info-title-text-color;
+    margin: em(20) 0;
+    font-weight: 900;
+
+  }
+
+  &__name {
+    color: white;
+    font-size: em(40);
+    margin-bottom: em(10);
+  }
+
+  &__desc {
+    color: white;
+    font-size: em(25);
+    margin-bottom: em(20);
+
+  }
+
+  &__link {
+    @include flexbox(row, center);
+    align-items: center;
+    color: $primary-text-color;
+    font-size: em(20);
+    font-weight: 900;
+    background-color: $info-title-text-color;
+    width: em(100);
+    height: em(30);
+    border-radius: em(20);
+  }
+}

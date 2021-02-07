@@ -513,4 +513,66 @@ input {
   color: #524e4b;
   border-radius: 10px;
 }
+
+.project {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-flex-direction: column;
+  -moz-box-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  background-color: #524e4b;
+  width: 46.875em;
+  padding: 2.5em;
+  align-items: center;
+  margin: 0.625em;
+}
+
+.project img {
+  height: 26.25em;
+  width: 37.5em;
+}
+
+.project__tech {
+  color: #944dff;
+  margin: 1.25em 0;
+  font-weight: 900;
+}
+
+.project__name {
+  color: white;
+  font-size: 2.5em;
+  margin-bottom: 0.625em;
+}
+
+.project__desc {
+  color: white;
+  font-size: 1.5625em;
+  margin-bottom: 1.25em;
+}
+
+.project__link {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-box-flex-direction: row;
+  -moz-box-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-justify-content: center;
+  -moz-box-justify-content: center;
+  -ms-justify-content: center;
+  justify-content: center;
+  align-items: center;
+  color: #524e4b;
+  font-size: 1.25em;
+  font-weight: 900;
+  background-color: #944dff;
+  width: 6.25em;
+  height: 1.875em;
+  border-radius: 1.25em;
+}
 /*# sourceMappingURL=main.css.map */

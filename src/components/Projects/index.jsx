@@ -16,10 +16,10 @@ const Projects = () => {
         <h2 className="projects__title">03. WHAT</h2>
       </div>
       <div className="projects-card-ctr">
-        {/* <PCard
+        <PCard
           image={Company}
           name="Sample Company Website"
-          desc=""
+          desc="Single Page Company Website"
           address="https://stupefied-shaw-023514.netlify.com/"
           tech="React | Sass"
         />
@@ -57,7 +57,7 @@ const Projects = () => {
           desc="Twitter Clone"
           address="http://postr-jc.surge.sh/"
           tech="React On Rails | CSS"
-        /> */}
+        />
       </div>
     </section>
   );
