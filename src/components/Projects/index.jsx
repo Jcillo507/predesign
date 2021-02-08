@@ -11,7 +11,7 @@ import Venu from "..//../assets/projects/venu.png";
 
 const Projects = () => {
   return (
-    <section className="projects">
+    <section className="projects" id="projects">
       <div className="projects__intro left">
         <h2 className="projects__title">03. WHAT</h2>
         <h4 className="projects__subtitle">

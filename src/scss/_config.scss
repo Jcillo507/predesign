@@ -8,7 +8,7 @@ $browser-context:16px;
     $context: $context * 1px;
   }
 
-  @return $pixels / $context * 1em;
+  @return $pixels / $context * 1rem;
 }
 
 @mixin flexbox ($direction:row, $spacing:space-between) {

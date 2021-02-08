@@ -7,7 +7,7 @@ const Contact = () => {
     <section className="contact">
       <div className="contact__text-ctr">
         <div className="contact__text-wrapper">
-          <h2 className="contact__title">05.Contact Me</h2>
+          <h2 className="contact__title">04.Contact Me</h2>
           <h3 className='form__text'>Have a question or want to work with me?</h3>
           <h3 className='form__text'>
             Send me an e-mail and I will get back to you at my earliest convenience

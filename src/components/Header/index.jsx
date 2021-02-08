@@ -11,8 +11,8 @@ const Header = () => {
       </div>
       <nav className="header__link-ctr">
         <div className="header__dropdown">
-          <button className="header__dropdown-btn header-link">
-            <a href="#projects">Projects</a>
+          <button className="header__dropdown-btn" >
+            <a className="header__link" href="#projects">Projects</a>
           </button>
           <div className="header__dropdown-content">
             <a href="https://stupefied-shaw-023514.netlify.com/">
@@ -27,17 +27,8 @@ const Header = () => {
             <a href="http://postr-jc.surge.sh/">Postr</a>
           </div>
         </div>
-        <a href="#skills" className="header-link">
-          Skills
-        </a>
-        <a href="#contact" className="header-link">
+        <a href="#contact" className="header__link">
           Contact
-        </a>
-        <a
-          className="header-link"
-          href="https://drive.google.com/file/d/1p5A0XqmG1Sc1fqiUKKltZQa-qC2bIbV9/view?usp=sharing"
-        >
-          Resume
         </a>
       </nav>
     </header>
