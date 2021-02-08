@@ -386,7 +386,7 @@ input {
   -moz-box-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  height: 56.25em;
+  margin-bottom: 9.375em;
 }
 
 .skills img {
@@ -524,7 +524,6 @@ input {
 .projects__intro {
   width: 40.625em;
   align-self: center;
-  margin-bottom: 18.75em;
 }
 
 .projects__title {
@@ -545,6 +544,7 @@ input {
 .projects .left {
   justify-self: end;
   margin-right: 25px;
+  margin-top: -400px;
 }
 
 .projects .right {

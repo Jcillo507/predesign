@@ -1,6 +1,6 @@
 .skills {
   @include flexbox(row, center);
-  height: em(900);
+  margin-bottom: em(150);
 
   img {
     height: em(200);
