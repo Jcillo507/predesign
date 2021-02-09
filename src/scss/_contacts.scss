@@ -1,6 +1,7 @@
 .contact {
   @include flexbox(row, center);
   height: em(900);
+      color: $app-bg;
 
   &__text-ctr {
     @include flexbox(column, center);
@@ -13,7 +14,6 @@
   }
 
   &__title {
-    color: $info-title-text-color;
     font-weight: 900;
     font-size: em(17);
     margin-bottom: em(20);
@@ -23,8 +23,6 @@
   .form {
     @include flexbox(column, center);
     align-items: center;
-    background-color: $primary-text-color;
-    color: $info-title-text-color;
     flex: 50%;
     height: em(500);
     margin-top: em(200);

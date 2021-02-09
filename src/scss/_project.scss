@@ -1,7 +1,5 @@
 .project {
   @include flexbox(column, center);
-  background-color: $primary-text-color;
-
   width: em(650);
   padding: em(40);
   align-items: center;
@@ -20,13 +18,13 @@
   }
 
   &__name {
-    color: white;
+    color: $app-bg;
     font-size: em(40);
     margin-bottom: em(10);
   }
 
   &__desc {
-    color: white;
+    color: $app-bg;
     font-size: em(25);
     margin-bottom: em(20);
 

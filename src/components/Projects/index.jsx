@@ -1,5 +1,4 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 import PCard from "../PCard";
 
@@ -11,19 +10,21 @@ import Postr from "..//../assets/projects/Postr.png";
 import Venu from "..//../assets/projects/venu.png";
 
 const Projects = () => {
+
   return (
-    <section className="projects" id="projects">
-        <Fade left>
+    <section
+      className="projects"
+    >
       <div className="projects__intro left">
         <h2 className="projects__title">03. WHAT</h2>
         <h4 className="projects__subtitle">
           I specialize in bringing your ideas to life digitally.
         </h4>
-        <p className="projects__info">
-          I am a progressive and insightful devloper, technically and
-          creatively skilled, to transform you website ideas into reality
+        <p className="projects__info" >
+          I am a progressive and insightful devloper, technically and creatively
+          skilled, to transform you website ideas into reality.
         </p>
-      </div></Fade>
+      </div>
       <div className="right">
         <PCard
           image={Company}

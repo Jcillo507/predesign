@@ -1,4 +1,6 @@
 import React from 'react';
+import { useInView } from "react-intersection-observer";
+
 
 import Header from './components/Header'
 import Hero from './components/Hero'
@@ -10,14 +12,19 @@ import Info from './components/Info'
 
 import './css/main.css';
 
-function App() {
+const App = ()=> {
+  const [ref, inView] = useInView({
+    threshold: 0,
+  });
   return (
-    <div className="App">
+    <div className={"App"+ " "+ (inView?"dark":"light")}>
       <Header />
       <Hero />
       <Info />
       <Skills />
+      <div className="test" ref={ref}>
       <Projects />
+      </div>
       <Contact />
     </div>
   );
