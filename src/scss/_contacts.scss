@@ -1,14 +1,15 @@
 .contact {
   @include flexbox(row, center);
   height: em(900);
-      color: $app-bg;
+  color: $app-bg;
 
   &__text-ctr {
     @include flexbox(column, center);
     align-items: flex-end;
     flex: 50%;
   }
-  &__text-wrapper{
+
+  &__text-wrapper {
     padding-left: em(200);
 
   }
@@ -18,7 +19,7 @@
     font-size: em(17);
     margin-bottom: em(20);
     letter-spacing: em(3);
-    color:$info-title-text-color;
+    color: $info-title-text-color;
   }
 
   .form {

@@ -98,8 +98,8 @@ section {
 
 body {
   line-height: 1;
-  color: $primary-text-color;
-    background-color: $app-bg;
+  // color: $primary-text-color;
+  background-color: $app-bg;
   font-family: $header-font;
 }
 
@@ -138,26 +138,38 @@ input {
 .dark {
   background-color: $primary-text-color;
   animation: dark-change .75s ease-in;
+      color: $app-bg
+
 }
-.light{
+
+.light {
   background-color: $app-bg;
   animation: light-change .75s ease-in;
+    color: $primary-text-color;
+
 }
+
 @keyframes dark-change {
   0% {
     background-color: $app-bg;
+    color: $primary-text-color
   }
 
   100% {
     background-color: $primary-text-color;
+    color: $app-bg
   }
 }
-@keyframes light-change{
-    0% {
-      background-color: $primary-text-color;
-    }
 
-    100% {
-      background-color: $app-bg;
-    }
+@keyframes light-change {
+  0% {
+    background-color: $primary-text-color;
+    color: $app-bg
+  }
+
+  100% {
+    background-color: $app-bg;
+    color: $primary-text-color;
+
+  }
 }
