@@ -358,11 +358,41 @@ input {
   justify-content: center;
   align-items: center;
   flex: 50%;
+  position: relative;
 }
 
 .hero__image-ctr img {
   margin-left: 6.25rem;
   height: 37.5rem;
+  width: 37.5rem;
+  object-fit: cover;
+}
+
+.hero__image-ctr::before, .hero__image-ctr::after {
+  background-image: linear-gradient(-180deg, #090C9B 0%, #944dff 97%);
+  content: '';
+  margin-left: 6.25rem;
+  position: absolute;
+  transition: all .2s;
+  transition-delay: .2s;
+  transform: translateY(0px) translateX(0px);
+  width: 37.5rem;
+  height: 37.5rem;
+  z-index: -1;
+}
+
+.hero__image-ctr::after {
+  background-image: linear-gradient(0deg, #524e4b 0%, #FFAE3D 97%);
+}
+
+.hero__image-ctr:hover::before {
+  animation: slick-hover-2 3s .4s linear infinite;
+  transform: translateY(-20px) translateX(-20px);
+}
+
+.hero__image-ctr:hover::after {
+  animation: slick-hover 3s .4s linear infinite reverse;
+  transform: translateY(20px) translateX(20px);
 }
 
 .hero__text-ctr {
@@ -403,6 +433,58 @@ input {
   font-family: "Big Shoulders Display", cursive;
   font-size: 2.5rem;
   margin-top: -6.25rem;
+}
+
+.hero__text:hover {
+  animation: hoverPop 2s infinite;
+}
+
+@keyframes slick-hover {
+  0% {
+    transform: translateY(20px) translateX(20px);
+  }
+  16% {
+    transform: translateY(-13px) translateX(-9px);
+  }
+  33% {
+    transform: translateY(4px) translateX(12px);
+  }
+  50% {
+    transform: translateY(20px) translateX(-20px);
+  }
+  66% {
+    transform: translateY(-3px) translateX(8px);
+  }
+  83% {
+    transform: translateY(-15px) translateX(-11px);
+  }
+  100% {
+    transform: translateY(20px) translateX(20px);
+  }
+}
+
+@keyframes slick-hover-2 {
+  0% {
+    transform: translateY(-20px) translateX(-20px);
+  }
+  16% {
+    transform: translateY(3px) translateX(-5px);
+  }
+  33% {
+    transform: translateY(18px) translateX(-10px);
+  }
+  50% {
+    transform: translateY(-20px) translateX(20px);
+  }
+  66% {
+    transform: translateY(15px) translateX(-4px);
+  }
+  83% {
+    transform: translateY(-1px) translateX(15px);
+  }
+  100% {
+    transform: translateY(-20px) translateX(-20px);
+  }
 }
 
 .info {
@@ -594,6 +676,14 @@ input {
   padding: 1.25rem 20px;
 }
 
+.contact .form__text a {
+  color: #f3f3f0;
+}
+
+.contact .form__text a:hover {
+  color: #944dff;
+}
+
 .contact .form__label {
   margin: 1.25rem;
   font-size: 1.25rem;
@@ -617,6 +707,10 @@ input {
   background-color: #944dff;
   color: #524e4b;
   border-radius: 10px;
+}
+
+.contact .form__submit:hover {
+  cursor: pointer;
 }
 
 .projects {

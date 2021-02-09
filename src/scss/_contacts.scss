@@ -32,6 +32,12 @@
     &__text {
       font-size: em(25);
       padding: em(20) 20px;
+      a{
+        color: $app-bg;
+      }
+      a:hover{
+        color:$info-title-text-color
+      }
     }
 
     &__label {
@@ -58,6 +64,9 @@
       background-color: $info-title-text-color;
       color: $primary-text-color;
       border-radius: 10px;
+    }
+    &__submit:hover{
+      cursor: pointer;
     }
   }
 }
