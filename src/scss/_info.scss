@@ -5,6 +5,7 @@
   line-height: 1.5;
 
   img {
+    @include slideInFromLeft;
     height: em(600);
   }
 
@@ -19,7 +20,7 @@
     color: $info-title-text-color;
     font-weight: 900;
     font-size: em(17);
-    margin-bottom: em(20);
+    margin-bottom: 20px;
     letter-spacing: em(3);
   }
 

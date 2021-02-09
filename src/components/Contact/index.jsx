@@ -1,20 +1,28 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
+
 
 import Resume from "../Resume/";
 
 const Contact = () => {
   return (
     <section className="contact">
-      <div className="contact__text-ctr">
-        <div className="contact__text-wrapper">
-          <h2 className="contact__title">04.Contact Me</h2>
-          <h3 className='form__text'>Have a question or want to work with me?</h3>
-          <h3 className='form__text'>
-            Send me an e-mail and I will get back to you at my earliest convenience
-          </h3>
-          <Resume />
+      <Fade left>
+        <div className="contact__text-ctr">
+          <div className="contact__text-wrapper">
+            <h2 className="contact__title">04.Contact Me</h2>
+            <h3 className="form__text">
+              Have a question or want to work with me?
+            </h3>
+            <h3 className="form__text">
+              Send me an e-mail and I will get back to you at my earliest
+              convenience
+            </h3>
+            <Resume />
+          </div>
         </div>
-      </div>
+      </Fade>
+      <Fade right>
       <form
         className="form"
         action="https://formspree.io/jcillo507@yahoo.com"
@@ -26,6 +34,7 @@ const Contact = () => {
         <textarea className="form__body" type="text" name="body" />
         <input className="form__submit" type="submit" name="submit" />
       </form>
+      </Fade>
     </section>
   );
 };

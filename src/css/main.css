@@ -132,7 +132,7 @@ table {
 }
 
 body {
-  background-color: #F6F6F3;
+  background-color: #f3f3f0;
   color: #524e4b;
   font-family: "Montserrat", sans-serif;
 }
@@ -212,7 +212,7 @@ input {
 }
 
 .header__dropdown-btn {
-  background-color: #F6F6F3;
+  background-color: #f3f3f0;
   color: #090C9B;
   font-family: "Oswald", sans-serif;
   border: none;
@@ -285,11 +285,10 @@ input {
 
 .hero__image-ctr img {
   margin-left: 6.25rem;
-  height: 34.375rem;
+  height: 37.5rem;
 }
 
 .hero__text-ctr {
-  flex: 50%;
   display: -moz-flex;
   display: -ms-flex;
   display: flex;
@@ -300,6 +299,7 @@ input {
   -moz-box-justify-content: space-evenly;
   -ms-justify-content: space-evenly;
   justify-content: space-evenly;
+  flex: 50%;
 }
 
 .hero__bullet-ctr {
@@ -313,18 +313,45 @@ input {
   -moz-box-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  height: 18.75rem;
+  animation: slideInFromRight 1s ease-out;
+  margin-top: -2.5rem;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(50);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .hero__bullets {
-  font-size: 3.75rem;
+  font-size: 4.375rem;
   font-family: "Source Code Pro", monospace;
+  margin: 1.25rem 0;
 }
 
 .hero__text {
-  padding-bottom: 3.125rem;
+  animation: slideInFromBottom 1s ease-out;
   font-family: "Big Shoulders Display", cursive;
   font-size: 2.5rem;
+  margin-top: -6.25rem;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(300%);
+  }
+  50% {
+    transform: translate5(150);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 .info {
@@ -344,7 +371,20 @@ input {
 }
 
 .info img {
+  animation: slideInFromLeft 1s ease-out;
   height: 37.5rem;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-50);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 .info__text-ctr {
@@ -367,7 +407,7 @@ input {
   color: #944dff;
   font-weight: 900;
   font-size: 1.0625rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 20px;
   letter-spacing: 0.1875rem;
 }
 
@@ -396,6 +436,7 @@ input {
   -ms-justify-content: center;
   justify-content: center;
   margin-bottom: 9.375rem;
+  height: 56.25rem;
 }
 
 .skills img {
@@ -418,7 +459,7 @@ input {
   color: #944dff;
   font-weight: 900;
   font-size: 1.0625rem;
-  margin-bottom: 1.25rem;
+  margin-bottom: 2.5rem;
   letter-spacing: 0.1875rem;
 }
 
@@ -533,6 +574,7 @@ input {
 .projects__intro {
   width: 40.625rem;
   align-self: center;
+  padding-right: 2rem;
 }
 
 .projects__title {

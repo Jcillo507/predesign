@@ -1,6 +1,7 @@
 .skills {
   @include flexbox(row, center);
   margin-bottom: em(150);
+  height:em(900);
 
   img {
     height: em(200);
@@ -22,7 +23,7 @@
     color: $info-title-text-color;
     font-weight: 900;
     font-size: em(17);
-    margin-bottom: em(20);
+    margin-bottom: em(40);
     letter-spacing: em(3);
   }
 

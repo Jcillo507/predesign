@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 import PCard from "../PCard";
 
@@ -12,6 +13,7 @@ import Venu from "..//../assets/projects/venu.png";
 const Projects = () => {
   return (
     <section className="projects" id="projects">
+        <Fade left>
       <div className="projects__intro left">
         <h2 className="projects__title">03. WHAT</h2>
         <h4 className="projects__subtitle">
@@ -21,12 +23,11 @@ const Projects = () => {
           I am a progressive and insightful devloper, technically and
           creatively skilled, to transform you website ideas into reality
         </p>
-      </div>
+      </div></Fade>
       <div className="right">
         <PCard
           image={Company}
           name="Sample Company Website"
-          desc="Single Page Company Website"
           address="https://stupefied-shaw-023514.netlify.com/"
           tech="React | SCSS"
         />
@@ -35,7 +36,6 @@ const Projects = () => {
         <PCard
           image={Crypto}
           name="CryptoNews"
-          desc="Crypto currency coin tracker"
           address="https://jccn.herokuapp.com/"
           tech="React | ExpressJs | SCSS"
         />
@@ -44,7 +44,6 @@ const Projects = () => {
         <PCard
           image={Venu}
           name="Venu"
-          desc="Restuarant Website Aggregator"
           address="https://venu-app-v3.herokuapp.com/"
           tech="React | ExpressJs | CSS"
         />
@@ -53,7 +52,6 @@ const Projects = () => {
         <PCard
           image={Country}
           name="Country Info"
-          desc="REST Country API"
           address="http://jccountry.surge.sh/"
           tech="React | SCSS"
         />
@@ -62,7 +60,6 @@ const Projects = () => {
         <PCard
           image={Late}
           name="Dont Be Late"
-          desc="Obstacle Aversion Game"
           address="https://jcillo507.github.io/dont-be-late/"
           tech="Html | CSS"
         />
@@ -71,7 +68,6 @@ const Projects = () => {
         <PCard
           image={Postr}
           name="Postr"
-          desc="Twitter Clone"
           address="http://postr-jc.surge.sh/"
           tech="React On Rails | CSS"
         />

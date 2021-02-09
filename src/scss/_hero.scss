@@ -6,34 +6,39 @@
 
   &__image-ctr {
     @include flexbox(row, center);
+    // @include slideInFromLeft;
     align-items: center;
     flex: 50%;
 
     img {
       margin-left: em(100);
-      height: em(550);
+      height: em(600)
     }
   }
 
   &__text-ctr {
-    flex: 50%;
     @include flexbox(column, space-evenly);
+    flex: 50%;
   }
 
   &__bullet-ctr {
     @include flexbox(column, space-between);
-    height: em(300);
+    @include slideInFromRight;
+    margin-top: em(-40);
+
   }
 
   &__bullets {
-    font-size: em(60);
+    font-size: em(70);
     font-family: $hero-bullet-font;
+    margin: em(20) 0;
   }
 
   &__text {
-    // padding-right: em(200);
-    padding-bottom: em(50);
+    @include slideInFromBottom;
     font-family: $hero-text-font;
     font-size: em(40);
+    margin-top: em(-100);
+
   }
 }
