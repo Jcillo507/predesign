@@ -1,16 +1,15 @@
 import React from "react";
-import Fade from "react-reveal/Fade";
 
 import HeroImage from "..//../assets/hero.png";
 
 const Hero = () => {
+
   return (
     <section className="hero">
-      < Fade left >
       <div className="hero__image-ctr">
         <img src={HeroImage} />
       </div>
-      </Fade>
+      
 
       <div className="hero__text-ctr">
         <div className="hero__bullet-ctr">

@@ -23,7 +23,7 @@
 
   &__bullet-ctr {
     @include flexbox(column, space-between);
-    @include slideInFromRight;
+    // @include slideInFromRight;
     margin-top: em(-40);
 
   }
@@ -35,7 +35,7 @@
   }
 
   &__text {
-    @include slideInFromBottom;
+    // @include slideInFromBottom;
     font-family: $hero-text-font;
     font-size: em(40);
     margin-top: em(-100);
