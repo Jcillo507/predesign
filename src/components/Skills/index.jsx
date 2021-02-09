@@ -24,12 +24,12 @@ const Skills = () => {
       </Fade>
       <Fade right>
         <div className="skills__card-ctr">
-          <img src={ReactLogo} alt="" />
-          <img src={SassLogo} alt="" />
-          <img src={JsLogo} alt="" />
-          <img src={CssLogo} alt="" />
-          <img src={HtmlLogo} alt="" />
-          <img src={SwiftLogo} alt="" />
+          <img src={ReactLogo} alt="react logo" />
+          <img src={SassLogo} alt="sass logo" />
+          <img src={JsLogo} alt="js logo" />
+          <img src={CssLogo} alt="css logo" />
+          <img src={HtmlLogo} alt="html logo" />
+          <img src={SwiftLogo} alt="swift logo" />
         </div>
       </Fade>
     </section>

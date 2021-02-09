@@ -10,6 +10,7 @@
   &__title-ctr {
     flex: 50%;
     margin-left: em(200);
+    align-self: center;
 
     li {
       font-size: em(40);
@@ -35,6 +36,15 @@
   }
 
   &__card-ctr {
+    @include flexbox(row, flex-start);
     flex: 50%;
+    flex-wrap: wrap;
+    align-items: baseline;
+    // padding: em(-40)
+img{
+  width: em(200);
+  height:em(200);
+  margin: em(50)
+}
   }
 }

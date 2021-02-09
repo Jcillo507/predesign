@@ -6,7 +6,7 @@ import Resume from "../Resume/";
 
 const Contact = () => {
   return (
-    <section className="contact">
+    <section className="contact" id='contact'>
     <Fade left>
         <div className="contact__text-ctr">
           <div className="contact__text-wrapper">
