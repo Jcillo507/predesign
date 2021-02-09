@@ -5,16 +5,39 @@
   align-items: center;
   margin: em(10);
 
+  &__overlay {
+    position: relative;
+    height: em(420);
+    width: em(600);
+  }
+
+  &__overlay:after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+  }
+
+  &__overlay:hover:after {
+    opacity: 1;
+  }
+
   img {
     height: em(420);
     width: em(600);
+    z-index: 1;
   }
 
   &__tech {
     color: $info-title-text-color;
     margin: em(20) 0;
     font-weight: 900;
-
   }
 
   &__name {
@@ -40,5 +63,6 @@
     width: em(100);
     height: em(30);
     border-radius: em(20);
+
   }
 }

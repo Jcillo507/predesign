@@ -101,6 +101,7 @@ body {
   // color: $primary-text-color;
   background-color: $app-bg;
   font-family: $header-font;
+  box-sizing: border-box;
 }
 
 a {
