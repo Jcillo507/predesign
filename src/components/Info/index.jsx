@@ -1,10 +1,14 @@
-import React from 'react'
+import React from "react";
+import Fade from "react-reveal/Fade";
 import InfoImage from "..//../assets/info-image.png";
 
-const Info = ()=>{
+const Info = () => {
   return (
     <section className="info">
+      <Fade left>
         <img src={InfoImage} alt="info imagess" className="info__image" />
+      </Fade>
+      <Fade right>
         <blockquote className="info__text-ctr">
           <p className="info__title">01. WHO</p>
           <h3 className="info__heading">
@@ -22,8 +26,9 @@ const Info = ()=>{
             achieve results to create the best product.
           </p>
         </blockquote>
+      </Fade>
     </section>
   );
-}
+};
 
-export default Info
+export default Info;

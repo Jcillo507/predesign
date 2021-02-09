@@ -167,6 +167,54 @@ input {
   }
 }
 
+.slideInFromRight {
+  animation: slideInFromRight 1s ease-out;
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  50% {
+    transform: translateX(50);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideInFromLeft {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  50% {
+    transform: translateX(-50);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.slideInFromBottom {
+  animation: slideInFromBottom 1s ease-out;
+}
+
+@keyframes slideInFromBottom {
+  0% {
+    transform: translateY(300%);
+  }
+  50% {
+    transform: translate5(150);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
 .header {
   display: -moz-flex;
   display: -ms-flex;
@@ -237,7 +285,6 @@ input {
 }
 
 .header__dropdown-btn {
-  background-color: #f3f3f0;
   color: #090C9B;
   font-family: "Oswald", sans-serif;
   border: none;

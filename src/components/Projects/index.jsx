@@ -1,4 +1,5 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 import PCard from "../PCard";
 
@@ -12,19 +13,19 @@ import Venu from "..//../assets/projects/venu.png";
 const Projects = () => {
 
   return (
-    <section
-      className="projects"
-    >
-      <div className="projects__intro left">
-        <h2 className="projects__title">03. WHAT</h2>
-        <h4 className="projects__subtitle">
-          I specialize in bringing your ideas to life digitally.
-        </h4>
-        <p className="projects__info" >
-          I am a progressive and insightful devloper, technically and creatively
-          skilled, to transform you website ideas into reality.
-        </p>
-      </div>
+    <section className="projects">
+      <Fade left>
+        <div className="projects__intro left">
+          <h2 className="projects__title">03. WHAT</h2>
+          <h4 className="projects__subtitle">
+            I specialize in bringing your ideas to life digitally.
+          </h4>
+          <p className="projects__info">
+            I am a progressive and insightful devloper, technically and
+            creatively skilled, to transform you website ideas into reality.
+          </p>
+        </div>
+      </Fade>
       <div className="right">
         <PCard
           image={Company}

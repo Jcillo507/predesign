@@ -11,9 +11,9 @@ const Header = () => {
       </div>
       <nav className="header__link-ctr">
         <div className="header__dropdown">
-          <button className="header__dropdown-btn" >
+          <div className="header__dropdown-btn" >
             <a className="header__link" href="#projects">Projects</a>
-          </button>
+          </div>
           <div className="header__dropdown-content">
             <a href="https://stupefied-shaw-023514.netlify.com/">
               Sample Company Website
