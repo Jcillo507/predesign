@@ -4,33 +4,37 @@
   color: $primary-text-color;
   height: em(800);
 
-  &__image-ctr {
+  &__wrapper {
     @include flexbox(row, center);
     align-items: center;
     flex: 50%;
+  }
+
+  &__image-ctr {
+    @include flexbox(row, center);
     position: relative;
+
     img {
-      margin-left: em(100);
-      height: em(600);
-      width:em(600);
+      height: em(650);
+      width: em(650);
       object-fit: cover;
     }
+
     &::before,
     &::after {
-      background-image: linear-gradient(-180deg, #090C9B 0%, #944dff 97%);
+      background-image: linear-gradient(-180deg, #5F0CDB 0%, #524e4b 97%);
       content: '';
-      margin-left: em(100);
       position: absolute;
       transition: all .2s;
       transition-delay: .2s;
       transform: translateY(0px) translateX(0px);
-      width: em(600);
-      height:em(600);
+      width: em(650);
+      height: em(650);
       z-index: -1;
     }
 
     &::after {
-      background-image: linear-gradient(0deg, #524e4b 0%, #FFAE3D 97%);
+      background-image: linear-gradient(0deg, #524e4b 0%, #07CFCF 97%);
     }
 
     &:hover {
@@ -50,6 +54,7 @@
   &__text-ctr {
     @include flexbox(column, space-evenly);
     flex: 50%;
+    margin-left: em(100);
   }
 
   &__bullet-ctr {
@@ -68,11 +73,10 @@
     font-family: $hero-text-font;
     font-size: em(40);
     margin-top: em(-100);
-    &:hover{
-      animation: hoverPop 2s infinite;
-    }
+
   }
 }
+
 @keyframes slick-hover {
   0% {
     transform: translateY(20px) translateX(20px)

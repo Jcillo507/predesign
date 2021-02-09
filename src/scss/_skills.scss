@@ -8,7 +8,7 @@
 
   &__title-ctr {
     flex: 50%;
-    margin-left: em(200);
+    padding-left: em(200);
     align-self: center;
 
     li {
@@ -39,11 +39,11 @@
     flex: 50%;
     flex-wrap: wrap;
     align-items: baseline;
-    // padding: em(-40)
+    margin-right:em(200);
 img{
   width: em(200);
   height:em(200);
-  margin: em(50)
+  margin: em(50) em(70);
 }
   }
 }
