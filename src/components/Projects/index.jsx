@@ -16,7 +16,7 @@ const Projects = () => {
     <section className="projects">
       <Fade left>
         <div className="projects__intro left">
-          <h2 className="projects__title">03. WHAT</h2>
+          <span className="projects__title" id='title'>03. WHAT</span>
           <h4 className="projects__subtitle">
             I specialize in bringing your ideas to life digitally.
           </h4>

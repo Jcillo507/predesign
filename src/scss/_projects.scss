@@ -47,10 +47,7 @@
   .projects {
     grid-template-columns: 100%;
     grid-auto-rows: auto;
-
-    &__intro {
-      width: em(790);
-    }
+@include flexbox(column, center);
 
     .left {
       margin: auto

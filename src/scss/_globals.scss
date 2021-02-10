@@ -82,7 +82,7 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  // font-size: 100%;
   font: inherit;
   vertical-align: baseline;
 }
@@ -97,8 +97,7 @@ section {
 }
 
 body {
-  line-height: 1;
-  // color: $primary-text-color;
+  // line-height: 1;
   background-color: $app-bg;
   font-family: $header-font;
   box-sizing: border-box;

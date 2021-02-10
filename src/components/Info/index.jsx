@@ -10,7 +10,7 @@ const Info = () => {
       </Fade>
       <Fade right>
         <blockquote className="info__text-ctr">
-          <p className="info__title">01. WHO</p>
+          <h2 className="info__title">01. WHO</h2>
           <h3 className="info__heading">
             I am a creative front end <br />
             developer and designer <br />
