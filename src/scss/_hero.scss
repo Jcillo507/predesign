@@ -3,6 +3,7 @@
   margin: em(20) 0;
   color: $primary-text-color;
   height: em(800);
+  margin-bottom: em(200);
 
   &__wrapper {
     @include flexbox(row, center);
@@ -76,6 +77,39 @@
 
   }
 }
+@media only screen and (max-width: 1024px) {
+  .hero {
+    height: em(500);
+
+    &__image-ctr {
+      margin: 0;
+
+      &::before,
+      &::after {
+        transition: none;
+        display: none;
+      }
+
+      img {
+        height: em(300);
+        width: em(300);
+      }
+    }
+
+    &__text-ctr {
+      margin: 0;
+    }
+
+    &__bullets {
+      font-size: em(50);
+    }
+
+    &__text {
+      font-size: em(35);
+    }
+  }
+}
+
 
 @keyframes slick-hover {
   0% {

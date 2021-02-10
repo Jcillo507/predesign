@@ -78,3 +78,8 @@
     }
   }
 }
+@media only screen and (max-width: 1023px) {
+  .header__dropdown {
+    margin: em(40);
+  }
+}

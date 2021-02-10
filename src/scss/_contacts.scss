@@ -1,7 +1,7 @@
 .contact {
   @include flexbox(row, center);
-  height: em(900);
   color: $app-bg;
+  -webkit-text-size-adjust: 100%;
 
   &__text-ctr {
     @include flexbox(column, center);
@@ -15,11 +15,11 @@
   }
 
   &__title {
+    color: $info-title-text-color;
     font-weight: 900;
-    font-size: em(17);
+    font-size: 20px;
     margin-bottom: em(20);
     letter-spacing: em(3);
-    color: $info-title-text-color;
   }
 
   .form {
@@ -68,6 +68,24 @@
     }
     &__submit:hover{
       cursor: pointer;
+    }
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .contact {
+    @include flexbox(column, flex-end);
+
+    &__text-wrapper {
+      padding-left: em(100);
+    }
+
+    .form {
+      margin-top: auto;
+
+      &__submit {
+        margin-bottom: em(100);
+      }
     }
   }
 }

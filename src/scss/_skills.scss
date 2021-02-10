@@ -1,6 +1,6 @@
 .skills {
   @include flexbox(row, center);
-  height:em(900);
+  margin-bottom: em(200);
 
   img {
     height: em(200);
@@ -22,8 +22,8 @@
   &__title {
     color: $info-title-text-color;
     font-weight: 900;
-    font-size: em(17);
-    margin-bottom: em(40);
+    font-size: 20px;
+    margin-bottom: em(20);
     letter-spacing: em(3);
   }
 
@@ -47,3 +47,23 @@ img{
 }
   }
 }
+@media only screen and (max-width: 1024px) {
+  .skills {
+    &__title-ctr {
+      padding-left: em(100);
+    }
+
+    &__card-ctr {
+      padding-top: em(10);
+      margin: em(20) em(60);
+      justify-content: center;
+
+      img {
+        width: em(100);
+        height: em(100);
+        margin: em(20);
+      }
+    }
+  }
+}
+

@@ -330,6 +330,12 @@ input {
   color: #944dff;
 }
 
+@media only screen and (max-width: 1023px) {
+  .header__dropdown {
+    margin: 2.5rem;
+  }
+}
+
 .hero {
   display: -moz-flex;
   display: -ms-flex;
@@ -344,6 +350,7 @@ input {
   margin: 1.25rem 0;
   color: #524e4b;
   height: 50rem;
+  margin-bottom: 12.5rem;
 }
 
 .hero__wrapper {
@@ -448,6 +455,32 @@ input {
   margin-top: -6.25rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .hero {
+    height: 31.25rem;
+  }
+  .hero__image-ctr {
+    margin: 0;
+  }
+  .hero__image-ctr::before, .hero__image-ctr::after {
+    transition: none;
+    display: none;
+  }
+  .hero__image-ctr img {
+    height: 18.75rem;
+    width: 18.75rem;
+  }
+  .hero__text-ctr {
+    margin: 0;
+  }
+  .hero__bullets {
+    font-size: 3.125rem;
+  }
+  .hero__text {
+    font-size: 2.1875rem;
+  }
+}
+
 @keyframes slick-hover {
   0% {
     transform: translateY(20px) translateX(20px);
@@ -507,9 +540,9 @@ input {
   -moz-box-justify-content: space-between;
   -ms-justify-content: space-between;
   justify-content: space-between;
-  height: 56.25rem;
   align-items: center;
   line-height: 1.5;
+  margin-bottom: 12.5rem;
 }
 
 .info img {
@@ -535,8 +568,8 @@ input {
 .info__title {
   color: #944dff;
   font-weight: 900;
-  font-size: 1.0625rem;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 1.25rem;
   letter-spacing: 0.1875rem;
 }
 
@@ -553,6 +586,31 @@ input {
   margin-right: 50px;
 }
 
+@media only screen and (max-width: 1024px) {
+  .info {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-flex-direction: column;
+    -moz-box-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-justify-content: center;
+    -moz-box-justify-content: center;
+    -ms-justify-content: center;
+    justify-content: center;
+  }
+  .info__title {
+    margin-top: 0.9375rem;
+  }
+  .info__heading {
+    margin-left: 1.25rem;
+  }
+  .info__text {
+    margin-left: 1.25rem;
+    margin-right: 6.25rem;
+  }
+}
+
 .skills {
   display: -moz-flex;
   display: -ms-flex;
@@ -564,7 +622,7 @@ input {
   -moz-box-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  height: 56.25rem;
+  margin-bottom: 12.5rem;
 }
 
 .skills img {
@@ -587,8 +645,8 @@ input {
 .skills__title {
   color: #944dff;
   font-weight: 900;
-  font-size: 1.0625rem;
-  margin-bottom: 2.5rem;
+  font-size: 20px;
+  margin-bottom: 1.25rem;
   letter-spacing: 0.1875rem;
 }
 
@@ -622,6 +680,22 @@ input {
   margin: 3.125rem 4.375rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .skills__title-ctr {
+    padding-left: 6.25rem;
+  }
+  .skills__card-ctr {
+    padding-top: 0.625rem;
+    margin: 1.25rem 3.75rem;
+    justify-content: center;
+  }
+  .skills__card-ctr img {
+    width: 6.25rem;
+    height: 6.25rem;
+    margin: 1.25rem;
+  }
+}
+
 .contact {
   display: -moz-flex;
   display: -ms-flex;
@@ -633,8 +707,8 @@ input {
   -moz-box-justify-content: center;
   -ms-justify-content: center;
   justify-content: center;
-  height: 56.25rem;
   color: #f3f3f0;
+  -webkit-text-size-adjust: 100%;
 }
 
 .contact__text-ctr {
@@ -657,11 +731,11 @@ input {
 }
 
 .contact__title {
+  color: #944dff;
   font-weight: 900;
-  font-size: 1.0625rem;
+  font-size: 20px;
   margin-bottom: 1.25rem;
   letter-spacing: 0.1875rem;
-  color: #944dff;
 }
 
 .contact .form {
@@ -724,6 +798,30 @@ input {
   cursor: pointer;
 }
 
+@media only screen and (max-width: 1024px) {
+  .contact {
+    display: -moz-flex;
+    display: -ms-flex;
+    display: flex;
+    -webkit-box-flex-direction: column;
+    -moz-box-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-justify-content: flex-end;
+    -moz-box-justify-content: flex-end;
+    -ms-justify-content: flex-end;
+    justify-content: flex-end;
+  }
+  .contact__text-wrapper {
+    padding-left: 6.25rem;
+  }
+  .contact .form {
+    margin-top: auto;
+  }
+  .contact .form__submit {
+    margin-bottom: 6.25rem;
+  }
+}
+
 .projects {
   display: grid;
   grid-template-columns: 50% 50%;
@@ -741,7 +839,7 @@ input {
 .projects__title {
   color: #944dff;
   font-weight: 900;
-  font-size: 1.0625rem;
+  font-size: 20px !important;
   margin-bottom: 1.25rem;
   letter-spacing: 0.1875rem;
 }
@@ -767,6 +865,22 @@ input {
   justify-self: start;
   margin-left: 25px;
   margin-top: 75px;
+}
+
+@media only screen and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+  }
+  .projects__intro {
+    width: 49.375rem;
+  }
+  .projects .left {
+    margin: auto;
+  }
+  .projects .right {
+    margin: auto;
+  }
 }
 
 .project {

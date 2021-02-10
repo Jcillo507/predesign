@@ -1,11 +1,11 @@
 .info {
   @include flexbox();
-  height: em(900);
   align-items: center;
   line-height: 1.5;
+    margin-bottom: em(200);
+
 
   img {
-    // @include slideInFromLeft;
     height: em(600);
   }
 
@@ -19,8 +19,8 @@
   &__title {
     color: $info-title-text-color;
     font-weight: 900;
-    font-size: em(17);
-    margin-bottom: 20px;
+    font-size: 20px;
+    margin-bottom: em(20);
     letter-spacing: em(3);
   }
 
@@ -36,5 +36,25 @@
     margin-top: em(30);
     margin-left: 20px;
     margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .info {
+    @include flexbox(column, center);
+
+    &__title {
+      margin-top: em(15);
+    }
+
+    &__heading {
+      margin-left: em(20);
+    }
+
+    &__text {
+      margin-left: em(20);
+      margin-right:em(100);
+      // font-size: em(20);
+
+    }
   }
 }

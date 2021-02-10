@@ -13,11 +13,11 @@
   }
 
   &__title {
-    color: $info-title-text-color;
-    font-weight: 900;
-    font-size: em(17);
-    margin-bottom: em(20);
-    letter-spacing: em(3);
+      color: $info-title-text-color;
+      font-weight: 900;
+      font-size: 20px !important; 
+      margin-bottom: em(20);
+      letter-spacing: em(3);
   }
 
   &__subtitle {
@@ -43,3 +43,22 @@
     margin-top: 75px;
   }
 }
+@media only screen and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+
+    &__intro {
+      width: em(790);
+    }
+
+    .left {
+      margin: auto
+    }
+
+    .right {
+      margin: auto
+    }
+  }
+}
+
