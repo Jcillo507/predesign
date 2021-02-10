@@ -1,0 +1,60 @@
+.info {
+  @include flexbox();
+  align-items: center;
+  line-height: 1.5;
+    margin-bottom: em(200);
+
+
+  img {
+    height: em(600);
+  }
+
+  &__text-ctr {
+    @include flexbox(column, center);
+    flex: 50%;
+    height: 100%;
+    margin-left: em(100);
+  }
+
+  &__title {
+    color: $info-title-text-color;
+    font-weight: 900;
+    font-size: 20px;
+    margin-bottom: em(20);
+    letter-spacing: em(3);
+  }
+
+  &__heading {
+    font-size: em(50);
+    font-weight: 900;
+    margin-left: 20px;
+
+  }
+
+  &__text {
+    font-weight: 700;
+    margin-top: em(30);
+    margin-left: 20px;
+    margin-right: 50px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .info {
+    @include flexbox(column, center);
+
+    &__title {
+      margin-top: em(15);
+    }
+
+    &__heading {
+      margin-left: em(20);
+    }
+
+    &__text {
+      margin-left: em(20);
+      margin-right:em(100);
+      // font-size: em(20);
+
+    }
+  }
+}

@@ -1,65 +1,80 @@
 import React from "react";
+import Fade from "react-reveal/Fade";
 
 import PCard from "../PCard";
 
-import BetThat from "..//../assets/projects/betthat.png";
+import Country from "..//../assets/projects/country.png";
 import Company from "..//../assets/projects/company.png";
 import Crypto from "..//../assets/projects/CryptoNews.png";
 import Late from "..//../assets/projects/dontbelate.png";
 import Postr from "..//../assets/projects/Postr.png";
 import Venu from "..//../assets/projects/venu.png";
 
-import "./projects.scss";
-
 const Projects = () => {
+
   return (
-    <div className="projects-ctr" id='projects'>
-      <h2 className="projects-title">Projects</h2>
-      <div className="projects-card-ctr">
+    <section className="projects">
+      <Fade left>
+        <div className="projects__intro left">
+          <span className="projects__title" id='title'>03. WHAT</span>
+          <h4 className="projects__subtitle">
+            I specialize in bringing your ideas to life digitally.
+          </h4>
+          <p className="projects__info">
+            I am a progressive and insightful devloper, technically and
+            creatively skilled, to transform you website ideas into reality.
+          </p>
+        </div>
+      </Fade>
+      <div className="right">
         <PCard
           image={Company}
           name="Sample Company Website"
-          desc=""
           address="https://stupefied-shaw-023514.netlify.com/"
-          tech="React | Sass"
+          tech="React | SCSS"
         />
+      </div>
+      <div className="left">
         <PCard
           image={Crypto}
           name="CryptoNews"
-          desc="Crypto currency coin tracker"
           address="https://jccn.herokuapp.com/"
-          tech="React | ExpressJs | Sass"
+          tech="React | ExpressJs | SCSS"
         />
+      </div>
+      <div className="right">
         <PCard
           image={Venu}
           name="Venu"
-          desc="Restuarant Website Aggregator"
           address="https://venu-app-v3.herokuapp.com/"
           tech="React | ExpressJs | CSS"
         />
+      </div>
+      <div className="left">
         <PCard
-          image={BetThat}
-          name="Bet That"
-          desc="Gambling Calculator"
-          address="http://jc-ga-p2.surge.sh/"
-          tech="React"
+          image={Country}
+          name="Country Info"
+          address="http://jccountry.surge.sh/"
+          tech="React | SCSS"
         />
+      </div>
+      <div className="right">
         <PCard
           image={Late}
           name="Dont Be Late"
-          desc="Racing Game"
           address="https://jcillo507.github.io/dont-be-late/"
           tech="Html | CSS"
         />
+      </div>
+      <div className="left">
         <PCard
           image={Postr}
           name="Postr"
-          desc="Twitter Clone"
           address="http://postr-jc.surge.sh/"
           tech="React On Rails | CSS"
         />
       </div>
-    </div>
+    </section>
   );
 };
 

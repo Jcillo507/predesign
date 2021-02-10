@@ -1,0 +1,61 @@
+
+.projects {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-auto-rows: auto;
+  line-height: 1.5;
+  color: $app-bg;
+
+  &__intro {
+    width: em(650);
+    align-self: center;
+    padding-right:em(32)
+  }
+
+  &__title {
+      color: $info-title-text-color;
+      font-weight: 900;
+      font-size: 20px !important; 
+      margin-bottom: em(20);
+      letter-spacing: em(3);
+  }
+
+  &__subtitle {
+    font-weight: 900;
+    font-size: em(50);
+    margin-bottom: 25px;
+    margin-left: 20px;
+  }
+
+  &__info {
+    margin-left: 20px;
+  }
+
+  .left {
+    justify-self: end;
+    margin-right: 25px;
+    margin-top: -400px;
+  }
+
+  .right {
+    justify-self: start;
+    margin-left: 25px;
+    margin-top: 75px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .projects {
+    grid-template-columns: 100%;
+    grid-auto-rows: auto;
+@include flexbox(column, center);
+
+    .left {
+      margin: auto
+    }
+
+    .right {
+      margin: auto
+    }
+  }
+}
+

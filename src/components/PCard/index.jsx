@@ -1,20 +1,20 @@
 import React from "react";
-import "./pcard.scss";
+import Fade from "react-reveal/Fade";
 
-const PCard = props => {
+const PCard = (props) => {
   return (
-    <div className="pcard-ctr">
-      <img className="project-img" src={props.image} />
-      <div className="overlay">
-        <div className="text title">{props.name}</div>
-        <div className="text desc">{props.desc}</div>
-        <div className="text tech"> {props.tech}</div>
-        <form action={props.address}>
-          <button className="pcard-bttn" type="submit">
-            Visit Website >
-          </button>
-        </form>
-      </div>
+    <div className="project">
+      <Fade bottom>
+        <div className="project__overlay">
+          <img src={props.image} />
+        </div>
+        <p className="project__tech"> {props.tech}</p>
+        <p className="project__name">{props.name}</p>
+        <p className="project__desc">{props.desc}</p>
+        <a href={props.address} target="_blank">
+          <div className="project__link">Visit</div>
+        </a>
+      </Fade>
     </div>
   );
 };

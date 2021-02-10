@@ -1,0 +1,85 @@
+.header {
+  @include flexbox(row, space-between);
+
+  &__logo {
+    margin-left: em(50);
+    margin-top: em(5);
+    margin-bottom: em(5);
+    height: em(140)
+  }
+
+  &__logo-ctr {
+    @include flexbox(row, space-between);
+    align-items: center;
+  }
+
+  &__logo-text {
+    color: $primary-text-color;
+    font-size: em(84);
+    font-family: $header-font;
+    margin-left: em(30);
+    font-weight: 900;
+  }
+&__link{
+  font-size: em(25);
+  font-weight: 300;
+  color: $primary-text-color;
+}
+&__link:hover{
+  color:$info-title-text-color;
+}
+  &__link-ctr {
+    @include flexbox(row, space-between);
+    font-family: $Oswald-font;
+    margin-right: em(100);
+    width: 15%;
+    align-items: center;
+  }
+
+  &__dropdown-btn {
+    color: $header-links;
+    font-family: $Oswald-font;
+    border: none;
+  }
+
+  &__dropdown {
+    position: relative;
+    display: inline-block;
+  }
+
+  &__dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $hover-dd-bg;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+
+    a {
+      color: $primary-text-color;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    a:hover {
+      background-color: $primary-text-color;
+      color: $info-title-text-color;
+    }
+  }
+
+  &__dropdown:hover {
+    .header__dropdown-content {
+      display: block;
+    }
+    .header__link{
+        color:$info-title-text-color;
+
+    }
+  }
+}
+@media only screen and (max-width: 1023px) {
+  .header__dropdown {
+    margin: em(40);
+  }
+}
