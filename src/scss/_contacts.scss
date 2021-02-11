@@ -1,7 +1,6 @@
 .contact {
   @include flexbox(row, center);
   color: $app-bg;
-  -webkit-text-size-adjust: 100%;
 
   &__text-ctr {
     @include flexbox(column, center);
@@ -17,7 +16,7 @@
   &__title {
     color: $info-title-text-color;
     font-weight: 900;
-    font-size: 20px;
+    font-size: em(20);
     margin-bottom: em(20);
     letter-spacing: em(3);
   }
@@ -31,7 +30,7 @@
 
     &__text {
       font-size: em(25);
-      padding: em(20) 20px;
+      padding: em(20);
       a{
         color: $app-bg;
       }

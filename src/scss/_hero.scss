@@ -2,8 +2,7 @@
   @include flexbox(row, center);
   margin: em(20) 0;
   color: $primary-text-color;
-  height: em(800);
-  margin-bottom: em(200);
+  margin-bottom: em(125) ;
 
   &__wrapper {
     @include flexbox(row, center);
@@ -16,8 +15,8 @@
     position: relative;
 
     img {
-      height: em(650);
-      width: em(650);
+      height: em(550);
+      width: em(550);
       object-fit: cover;
     }
 
@@ -29,8 +28,8 @@
       transition: all .2s;
       transition-delay: .2s;
       transform: translateY(0px) translateX(0px);
-      width: em(650);
-      height: em(650);
+      width: em(550);
+      height: em(550);
       z-index: -1;
     }
 
@@ -41,12 +40,12 @@
     &:hover {
       &::before {
         animation: slick-hover-2 3s .4s linear infinite;
-        transform: translateY(-20px) translateX(-20px);
+        transform: translateY(em(-20)) translateX(em(-20));
       }
 
       &::after {
         animation: slick-hover 3s .4s linear infinite reverse;
-        transform: translateY(20px) translateX(20px);
+        transform: translateY(em(20)) translateX(em(20));
       }
     }
   }
@@ -65,7 +64,7 @@
   }
 
   &__bullets {
-    font-size: em(70);
+    font-size: em(60);
     font-family: $hero-bullet-font;
     margin: em(20) 0;
   }
@@ -73,7 +72,7 @@
   &__text {
     font-family: $hero-text-font;
     font-size: em(40);
-    margin-top: em(-100);
+    margin-top: em(100);
 
   }
 }
@@ -113,60 +112,60 @@
 
 @keyframes slick-hover {
   0% {
-    transform: translateY(20px) translateX(20px)
+    transform: translateY(em(20)) translateX(em(20))
   }
 
   16% {
-    transform: translateY(-13px) translateX(-9px)
+    transform: translateY(em(13)) translateX(em(-9))
   }
 
   33% {
-    transform: translateY(4px) translateX(12px)
+    transform: translateY(em(4)) translateX(em(12))
   }
 
   50% {
-    transform: translateY(20px) translateX(-20px)
+    transform: translateY(em(20)) translateX(em(-20))
   }
 
   66% {
-    transform: translateY(-3px) translateX(8px)
+    transform: translateY(em(-3)) translateX(em(8))
   }
 
   83% {
-    transform: translateY(-15px) translateX(-11px)
+    transform: translateY(em(-15)) translateX(em(-11))
   }
 
   100% {
-    transform: translateY(20px) translateX(20px)
+    transform: translateY(em(20)) translateX(em(20))
   }
 }
 
 @keyframes slick-hover-2 {
   0% {
-    transform: translateY(-20px) translateX(-20px)
+    transform: translateY(em(-20)) translateX(em(-20))
   }
 
   16% {
-    transform: translateY(3px) translateX(-5px)
+    transform: translateY(em(3)) translateX(em(-5))
   }
 
   33% {
-    transform: translateY(18px) translateX(-10px)
+    transform: translateY(em(18)) translateX(em(-10))
   }
 
   50% {
-    transform: translateY(-20px) translateX(20px)
+    transform: translateY(em(-20)) translateX(em(20))
   }
 
   66% {
-    transform: translateY(15px) translateX(-4px)
+    transform: translateY(em(15)) translateX(em(-4))
   }
 
   83% {
-    transform: translateY(-1px) translateX(15px)
+    transform: translateY(em(-1)) translateX(em(15))
   }
 
   100% {
-    transform: translateY(-20px) translateX(-20px)
+    transform: translateY(em(-20)) translateX(em(-20))
   }
 }
