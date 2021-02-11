@@ -6,9 +6,6 @@ const Info = () => {
   return (
     <section className="info">
       <Fade left>
-        <img src={InfoImage} alt="info imagess" className="info__image" />
-      </Fade>
-      <Fade right>
         <blockquote className="info__text-ctr">
           <h2 className="info__title">01. WHO</h2>
           <h3 className="info__heading">
@@ -26,6 +23,9 @@ const Info = () => {
             achieve results to create the best product.
           </p>
         </blockquote>
+      </Fade>
+      <Fade right>
+        <img src={InfoImage} alt="info imagess" className="info__image" />
       </Fade>
     </section>
   );

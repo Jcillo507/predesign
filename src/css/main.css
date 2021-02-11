@@ -236,7 +236,7 @@ input {
   margin-left: 3.125rem;
   margin-top: 0.3125rem;
   margin-bottom: 0.3125rem;
-  height: 8.75rem;
+  height: 7.5rem;
 }
 
 .header__logo-ctr {
@@ -255,7 +255,7 @@ input {
 
 .header__logo-text {
   color: #524e4b;
-  font-size: 5.25rem;
+  font-size: 4.6875rem;
   font-family: "Montserrat", sans-serif;
   margin-left: 1.875rem;
   font-weight: 900;
@@ -310,7 +310,7 @@ input {
 
 .header__dropdown-content a {
   color: #524e4b;
-  padding: 12px 16px;
+  padding: 0.75rem 1rem;
   text-decoration: none;
   display: block;
 }
@@ -347,8 +347,7 @@ input {
   justify-content: center;
   margin: 1.25rem 0;
   color: #524e4b;
-  height: 50rem;
-  margin-bottom: 12.5rem;
+  margin-bottom: 7.8125rem;
 }
 
 .hero__wrapper {
@@ -381,8 +380,8 @@ input {
 }
 
 .hero__image-ctr img {
-  height: 40.625rem;
-  width: 40.625rem;
+  height: 34.375rem;
+  width: 34.375rem;
   object-fit: cover;
 }
 
@@ -393,8 +392,8 @@ input {
   transition: all .2s;
   transition-delay: .2s;
   transform: translateY(0px) translateX(0px);
-  width: 40.625rem;
-  height: 40.625rem;
+  width: 34.375rem;
+  height: 34.375rem;
   z-index: -1;
 }
 
@@ -404,12 +403,12 @@ input {
 
 .hero__image-ctr:hover::before {
   animation: slick-hover-2 3s .4s linear infinite;
-  transform: translateY(-20px) translateX(-20px);
+  transform: translateY(-1.25rem) translateX(-1.25rem);
 }
 
 .hero__image-ctr:hover::after {
   animation: slick-hover 3s .4s linear infinite reverse;
-  transform: translateY(20px) translateX(20px);
+  transform: translateY(1.25rem) translateX(1.25rem);
 }
 
 .hero__text-ctr {
@@ -442,7 +441,7 @@ input {
 }
 
 .hero__bullets {
-  font-size: 4.375rem;
+  font-size: 3.75rem;
   font-family: "Source Code Pro", monospace;
   margin: 1.25rem 0;
 }
@@ -450,7 +449,7 @@ input {
 .hero__text {
   font-family: "Big Shoulders Display", cursive;
   font-size: 2.5rem;
-  margin-top: -6.25rem;
+  margin-top: 6.25rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -481,49 +480,49 @@ input {
 
 @keyframes slick-hover {
   0% {
-    transform: translateY(20px) translateX(20px);
+    transform: translateY(1.25rem) translateX(1.25rem);
   }
   16% {
-    transform: translateY(-13px) translateX(-9px);
+    transform: translateY(0.8125rem) translateX(-0.5625rem);
   }
   33% {
-    transform: translateY(4px) translateX(12px);
+    transform: translateY(0.25rem) translateX(0.75rem);
   }
   50% {
-    transform: translateY(20px) translateX(-20px);
+    transform: translateY(1.25rem) translateX(-1.25rem);
   }
   66% {
-    transform: translateY(-3px) translateX(8px);
+    transform: translateY(-0.1875rem) translateX(0.5rem);
   }
   83% {
-    transform: translateY(-15px) translateX(-11px);
+    transform: translateY(-0.9375rem) translateX(-0.6875rem);
   }
   100% {
-    transform: translateY(20px) translateX(20px);
+    transform: translateY(1.25rem) translateX(1.25rem);
   }
 }
 
 @keyframes slick-hover-2 {
   0% {
-    transform: translateY(-20px) translateX(-20px);
+    transform: translateY(-1.25rem) translateX(-1.25rem);
   }
   16% {
-    transform: translateY(3px) translateX(-5px);
+    transform: translateY(0.1875rem) translateX(-0.3125rem);
   }
   33% {
-    transform: translateY(18px) translateX(-10px);
+    transform: translateY(1.125rem) translateX(-0.625rem);
   }
   50% {
-    transform: translateY(-20px) translateX(20px);
+    transform: translateY(-1.25rem) translateX(1.25rem);
   }
   66% {
-    transform: translateY(15px) translateX(-4px);
+    transform: translateY(0.9375rem) translateX(-0.25rem);
   }
   83% {
-    transform: translateY(-1px) translateX(15px);
+    transform: translateY(-0.0625rem) translateX(0.9375rem);
   }
   100% {
-    transform: translateY(-20px) translateX(-20px);
+    transform: translateY(-1.25rem) translateX(-1.25rem);
   }
 }
 
@@ -544,7 +543,7 @@ input {
 }
 
 .info img {
-  height: 37.5rem;
+  width: 50%;
 }
 
 .info__text-ctr {
@@ -566,7 +565,7 @@ input {
 .info__title {
   color: #944dff;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 1.25rem;
   letter-spacing: 0.1875rem;
 }
@@ -574,14 +573,14 @@ input {
 .info__heading {
   font-size: 3.125rem;
   font-weight: 900;
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .info__text {
   font-weight: 700;
   margin-top: 1.875rem;
-  margin-left: 20px;
-  margin-right: 50px;
+  margin-left: 1.25rem;
+  margin-right: 3.125rem;
 }
 
 @media only screen and (max-width: 1024px) {
@@ -629,7 +628,7 @@ input {
 
 .skills__title-ctr {
   flex: 50%;
-  padding-left: 12.5rem;
+  padding-right: 12.5rem;
   align-self: center;
 }
 
@@ -637,13 +636,13 @@ input {
   font-size: 2.5rem;
   font-weight: 700;
   color: #944dff;
-  padding: 20px;
+  padding: 1.25rem;
 }
 
 .skills__title {
   color: #944dff;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 1.25rem;
   letter-spacing: 0.1875rem;
 }
@@ -651,8 +650,8 @@ input {
 .skills__subtitle {
   font-weight: 900;
   font-size: 3.125rem;
-  margin-bottom: 25px;
-  margin-left: 20px;
+  margin-bottom: 1.5625rem;
+  margin-left: 1.25rem;
 }
 
 .skills__card-ctr {
@@ -669,18 +668,18 @@ input {
   flex: 50%;
   flex-wrap: wrap;
   align-items: baseline;
-  margin-right: 12.5rem;
+  margin-left: 9.375rem;
 }
 
 .skills__card-ctr img {
-  width: 12.5rem;
-  height: 12.5rem;
-  margin: 3.125rem 4.375rem;
+  width: 10.9375rem;
+  height: 10.9375rem;
+  margin: 2.8125rem;
 }
 
 @media only screen and (max-width: 1024px) {
   .skills__title-ctr {
-    padding-left: 6.25rem;
+    padding-right: 6.25rem;
   }
   .skills__card-ctr {
     padding-top: 0.625rem;
@@ -706,7 +705,6 @@ input {
   -ms-justify-content: center;
   justify-content: center;
   color: #f3f3f0;
-  -webkit-text-size-adjust: 100%;
 }
 
 .contact__text-ctr {
@@ -731,7 +729,7 @@ input {
 .contact__title {
   color: #944dff;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 1.25rem;
   margin-bottom: 1.25rem;
   letter-spacing: 0.1875rem;
 }
@@ -755,7 +753,7 @@ input {
 
 .contact .form__text {
   font-size: 1.5625rem;
-  padding: 1.25rem 20px;
+  padding: 1.25rem;
 }
 
 .contact .form__text a {
@@ -831,13 +829,13 @@ input {
 .projects__intro {
   width: 40.625rem;
   align-self: center;
-  padding-right: 2rem;
+  padding-left: 2rem;
 }
 
 .projects__title {
   color: #944dff;
   font-weight: 900;
-  font-size: 20px !important;
+  font-size: 1.25rem;
   margin-bottom: 1.25rem;
   letter-spacing: 0.1875rem;
 }
@@ -845,24 +843,24 @@ input {
 .projects__subtitle {
   font-weight: 900;
   font-size: 3.125rem;
-  margin-bottom: 25px;
-  margin-left: 20px;
+  margin-bottom: 1.5625rem;
+  margin-left: 1.25rem;
 }
 
 .projects__info {
-  margin-left: 20px;
+  margin-left: 1.25rem;
 }
 
 .projects .left {
   justify-self: end;
-  margin-right: 25px;
-  margin-top: -400px;
+  margin-left: 9.6875rem;
+  margin-top: -25rem;
 }
 
 .projects .right {
   justify-self: start;
-  margin-left: 25px;
-  margin-top: 75px;
+  margin-right: 9.6875rem;
+  margin-top: 4.6875rem;
 }
 
 @media only screen and (max-width: 1024px) {

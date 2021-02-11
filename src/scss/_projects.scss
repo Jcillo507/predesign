@@ -9,13 +9,13 @@
   &__intro {
     width: em(650);
     align-self: center;
-    padding-right:em(32)
+    padding-left:em(32)
   }
 
   &__title {
       color: $info-title-text-color;
       font-weight: 900;
-      font-size: 20px !important; 
+      font-size: em(20); 
       margin-bottom: em(20);
       letter-spacing: em(3);
   }
@@ -23,24 +23,24 @@
   &__subtitle {
     font-weight: 900;
     font-size: em(50);
-    margin-bottom: 25px;
-    margin-left: 20px;
+    margin-bottom:em(25);
+    margin-left: em(20);
   }
 
   &__info {
-    margin-left: 20px;
+    margin-left: em(20);
   }
 
   .left {
     justify-self: end;
-    margin-right: 25px;
-    margin-top: -400px;
+    margin-left: em(155);
+    margin-top: em(-400);
   }
 
   .right {
     justify-self: start;
-    margin-left: 25px;
-    margin-top: 75px;
+    margin-right: em(155);
+    margin-top: em(75);
   }
 }
 @media only screen and (max-width: 1024px) {
