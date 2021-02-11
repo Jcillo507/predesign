@@ -24,8 +24,8 @@ const App = ()=> {
       <Skills />
       <div className="test" ref={ref}>
       <Projects />
-      </div>
       <Contact />
+      </div>
     </div>
   );
 }
