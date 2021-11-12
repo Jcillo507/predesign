@@ -17,7 +17,7 @@ const App = ()=> {
     threshold: 0,
   });
   return (
-    <div className={"App"+ " "+ (inView?"dark":"light")}>
+    <div className={"App" + " " + (inView?"dark":"light")}>
       <Header />
       <Hero />
       <Info />

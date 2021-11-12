@@ -5,7 +5,7 @@
     margin-left: em(50);
     margin-top: em(5);
     margin-bottom: em(5);
-    height: em(120)
+    height: em(75)
   }
 
   &__logo-ctr {
@@ -15,19 +15,22 @@
 
   &__logo-text {
     color: $primary-text-color;
-    font-size: em(75);
+    font-size: em(50);
     font-family: $header-font;
     margin-left: em(30);
     font-weight: 900;
   }
-&__link{
-  font-size: em(25);
-  font-weight: 300;
-  color: $primary-text-color;
-}
-&__link:hover{
-  color:$info-title-text-color;
-}
+
+  &__link {
+    font-size: em(20);
+    font-weight: 300;
+    color: $primary-text-color;
+  }
+
+  &__link:hover {
+    color: $info-title-text-color;
+  }
+
   &__link-ctr {
     @include flexbox(row, space-between);
     font-family: $Oswald-font;
@@ -64,7 +67,7 @@
 
     a:hover {
       background-color: $primary-text-color;
-      color: $info-title-text-color;
+      color: white;
     }
   }
 
@@ -72,12 +75,14 @@
     .header__dropdown-content {
       display: block;
     }
-    .header__link{
-        color:$info-title-text-color;
+
+    .header__link {
+      color: $info-title-text-color;
 
     }
   }
 }
+
 @media only screen and (max-width: 1023px) {
   .header__dropdown {
     margin: em(40);

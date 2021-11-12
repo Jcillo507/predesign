@@ -6,13 +6,15 @@ const Header = () => {
   return (
     <header className="header">
       <div className="header__logo-ctr">
-        <img className="header__logo" src={Logo} />
+        <img className="header__logo" src={Logo} alt="logo" />
         <p className="header__logo-text">Joe Cillo</p>
       </div>
       <nav className="header__link-ctr">
         <div className="header__dropdown">
-          <div className="header__dropdown-btn" >
-            <a className="header__link" href="#projects">Projects</a>
+          <div className="header__dropdown-btn">
+            <a className="header__link" href="#projects">
+              Projects
+            </a>
           </div>
           <div className="header__dropdown-content">
             <a href="https://stupefied-shaw-023514.netlify.com/">

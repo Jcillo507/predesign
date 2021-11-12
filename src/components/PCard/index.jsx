@@ -6,12 +6,12 @@ const PCard = (props) => {
     <div className="project">
       <Fade bottom>
         <div className="project__overlay">
-          <img src={props.image} />
+          <img src={props.image} alt="website pic"/>
         </div>
         <p className="project__tech"> {props.tech}</p>
         <p className="project__name">{props.name}</p>
         <p className="project__desc">{props.desc}</p>
-        <a href={props.address} target="_blank">
+        <a href={props.address} target="_blank" rel="noopener noreferrer">
           <div className="project__link">Visit</div>
         </a>
       </Fade>

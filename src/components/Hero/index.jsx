@@ -8,7 +8,7 @@ const Hero = () => {
       <Fade left>
         <div className="hero__wrapper">
           <div className="hero__image-ctr">
-            <img src={HeroImage} />
+            <img src={HeroImage} alt='hero'/>
           </div>
         </div>
       </Fade>

@@ -236,7 +236,7 @@ input {
   margin-left: 3.125rem;
   margin-top: 0.3125rem;
   margin-bottom: 0.3125rem;
-  height: 7.5rem;
+  height: 4.6875rem;
 }
 
 .header__logo-ctr {
@@ -255,14 +255,14 @@ input {
 
 .header__logo-text {
   color: #524e4b;
-  font-size: 4.6875rem;
+  font-size: 3.125rem;
   font-family: "Montserrat", sans-serif;
   margin-left: 1.875rem;
   font-weight: 900;
 }
 
 .header__link {
-  font-size: 1.5625rem;
+  font-size: 1.25rem;
   font-weight: 300;
   color: #524e4b;
 }
@@ -317,7 +317,7 @@ input {
 
 .header__dropdown-content a:hover {
   background-color: #524e4b;
-  color: #944dff;
+  color: white;
 }
 
 .header__dropdown:hover .header__dropdown-content {
